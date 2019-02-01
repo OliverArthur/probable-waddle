@@ -16,7 +16,7 @@ $accordion-margin-top: 4.5rem !default;
 }
 
 .accordion>.accordion__heading:not(:first-child) {
-  border-top: 0.1rem solid #A8A29F;
+  border-top: 0.1rem solid $softwhite;
 }
 
 .accordion .accordion__trigger {
@@ -57,7 +57,7 @@ $accordion-margin-top: 4.5rem !default;
 }
 
 .accordion--nojs summary:not(:first-child) {
-  border-top: 0.1rem solid #A8A29F;
+  border-top: 0.1rem solid $softwhite;
 }
 
 .accordion--nojs summary{

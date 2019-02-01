@@ -10,7 +10,13 @@ export default class ModalTemplate {
     this.renderLists = this.renderLists.bind(this);
     this.renderList = this.renderList.bind(this);
   }
-
+  /**
+   * Render the modal
+   *
+   * @param {[ Object ]} data
+   * @returns { String }
+   * @memberof ModalTemplate
+   */
   modalMarkup (data) {
     const listItem = this.renderLists(data)
 
@@ -50,13 +56,26 @@ export default class ModalTemplate {
       </div>
     </div>`
   }
-
+  /**
+   * Map reduce of the list item html
+   *
+   * @param {[ Object ]} data
+   * @returns String
+   * @memberof ModalTemplate
+   */
   renderLists(data = []) {
     return data
       .map(item => this.renderList(item))
       .reduce((html, row) => html + row, "");
   }
 
+  /**
+   * render the list item
+   *
+   * @param {[ Object ]} data
+   * @returns String
+   * @memberof ModalTemplate
+   */
   renderList(data) {
     if (!data) return null
     const content = data.ingredients.hops

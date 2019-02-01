@@ -65,7 +65,10 @@ module.exports = {
       hash: true,
       title: 'Accordion',
       template: path.resolve(__dirname, 'src', 'index.html'),
-      filename: 'index.html'
+      filename: 'index.html',
+      assest: devMode === 'prodoction'
+        ? 'http://localhost:3000'
+        : 'https://naughty-poitras-68bdf9.netlify.com'
     }),
     new MiniCssExtractPlugin({
       filename: devMode ? '[name].css' : '[name].[hash].css',

@@ -1,0 +1,48 @@
+// ********************************************************
+// Typography Baseline
+// ********************************************************
+
+$pre-bg-color: #F7F3F7 !default;
+$pre-border-color: #E5E5E5 !default;
+$pre-border-width: 0.1rem !default;
+$pre-font-size: 1.6rem !default;
+$pre-padding: 0.1rem 0.3rem !default;
+
+// Typography Parts
+// ********************************************************
+
+b,
+strong {
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+*:not(pre) > code {
+  background: $pre-bg-color;
+  border: $pre-border-width solid $pre-border-color;
+  border-radius: $border-radius;
+  color: #333333;
+  font-family: monospace;
+  padding: $pre-padding;
+}
+
+h1,h2,h3,h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: $heading-level-one;
+}
+h2 {
+  font-size: $heading-level-two;
+}
+h3 {
+  font-size: $heading-level-three;
+}
+h4 {
+  font-size: $heading-level-fourth;
+}

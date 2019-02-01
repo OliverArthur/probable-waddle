@@ -1,0 +1,20 @@
+// ********************************************************
+// Unit conversion functions
+// ********************************************************
+//
+// Ref: http://www.stubbornella.org/content/2013/07/01/easy-peasy-rem-conversion-with-sass/
+
+$font-size-root: 62.5%;
+
+@function px-to-rem($size) {
+  $rem-size: $size / (16px * $font-size-root / 100%);
+  @return #{$rem-size}rem;
+}
+
+@function px-to-rem-unitless($size) {
+  $rem-size: $size / (16px * $font-size-root / 100%);
+  @return $rem-size;
+}
+
+// Golden ratio used for images' ratios
+$golden-ratio: 1.6180339887498948482;

@@ -1,0 +1,33 @@
+// ********************************************************
+// Button Component
+// ********************************************************
+
+
+// Button Parts
+// ********************************************************
+.btn {
+  font-size: 2.4rem;
+  background-color: transparent;
+  max-width: 50rem;
+  overflow: hidden;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  vertical-align: middle;
+  position: relative;
+  border-radius: $border-radius;
+  color: $white-color;
+  border:none;
+}
+
+.btn--plain {
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  color: $font-color;
+  cursor: pointer;
+  font-size: $font-size-base-rem;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,35 @@
+// ********************************************************
+// Root Baseline
+// ********************************************************
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size;
+}
+
+html {
+  font-size: $font-size;
+}
+
+body {
+  background-color: $body-base;
+  color: $font-color;
+  font-family: $font-family;
+  // Enabling kerning on the entire document.
+  // See: https://blog.typekit.com/2014/02/05/kerning-on-the-web/
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  font-size: $font-size-base;
+  font-weight: $font-weight;
+  line-height: $line-height-base;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  width: 100%;
+  min-height: 100%;
+}

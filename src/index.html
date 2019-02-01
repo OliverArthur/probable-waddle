@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.4.8/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://localhost:3000/main.css">
+  <title>Accordion</title>
+</head>
+<body>
+  <div class="layout">
+    <header class="layout__header">
+      <h1>Js accordion vs Not js Accordion</h1>
+      <nav class="layout_header--nav">
+        <a href="/" title="Link to the source code" target="_blank" class="btn btn--plain">
+          <i class="ion ion-logo-octocat"></i>
+        </a>
+      </nav>
+    </header>
+    <main class="layout__content">
+      <div class="container">
+        <div class="row">
+          <div class="column" id="accordion--js">
+          </div>
+          <div class="column">
+            <strong>Accordion no-js version</strong>
+            <div class="accordion accordion--responsive accordion--nojs">
+              <details role="presentation">
+                <summary class="accordion__heading" role="heading">Title</summary>
+                <div class="accordion__content">
+                  <p>Snackwave post-ironic gastropub poutine.
+                    Artisan pinterest mixtape aesthetic godard, vaporware kickstarter edison bulb mumblecore +1 irony cloud bread adaptogen. </p>
+                  <p><button class="btn btn--plain">Ver más</button></p>
+                </div>
+              </details>
+              <details role="presentation">
+                <summary class="accordion__heading" role="heading">Title</summary>
+                <div class="accordion__content">
+                  <p>Snackwave post-ironic gastropub poutine.
+                    Artisan pinterest mixtape aesthetic godard, vaporware kickstarter edison bulb mumblecore +1 irony cloud bread adaptogen. </p>
+                  <p><button class="btn btn--plain">Ver más</button></p>
+                </div>
+              </details>
+              <details role="presentation">
+                <summary class="accordion__heading" role="heading">Title</summary>
+                <div class="accordion__content">
+                  <p>Snackwave post-ironic gastropub poutine.
+                    Artisan pinterest mixtape aesthetic godard, vaporware kickstarter edison bulb mumblecore +1 irony cloud bread adaptogen. </p>
+                  <p><button class="btn btn--plain">Ver más</button></p>
+                </div>
+              </details>
+              <details role="presentation">
+                <summary class="accordion__heading" role="heading">Title</summary>
+                <div class="accordion__content">
+                  <p>Snackwave post-ironic gastropub poutine.
+                    Artisan pinterest mixtape aesthetic godard, vaporware kickstarter edison bulb mumblecore +1 irony cloud bread adaptogen. </p>
+                  <p><button class="btn btn--plain">Ver más</button></p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="modal-slot"></div>
+    </main>
+    <footer class="layout__footer"></footer>
+  </div>
+</body>
+</html>

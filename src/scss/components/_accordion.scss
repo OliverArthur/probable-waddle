@@ -1,0 +1,65 @@
+// ********************************************************
+// Accordion Component
+// ********************************************************
+
+$accordion-margin-top: 4.5rem !default;
+
+
+// Accordion Parts
+// ********************************************************
+
+.accordion {
+  background-color: $white-color;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  padding: $grid-gap;
+}
+
+.accordion>.accordion__heading:not(:first-child) {
+  border-top: 0.1rem solid #A8A29F;
+}
+
+.accordion .accordion__trigger {
+  text-align: left;
+  width: 100%;
+}
+
+.accordion__title{
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.accordion__title i{
+  font-size: 2.6rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+.accordion__panel {
+  margin: 0;
+}
+
+.accordion__content p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.accordion .view-more {
+  color: $bluesky
+}
+
+
+// Accordion not-js Parts
+// ********************************************************
+.accordion--nojs {
+  margin-top: 1.5rem;
+}
+
+.accordion--nojs summary:not(:first-child) {
+  border-top: 0.1rem solid #A8A29F;
+}
+
+.accordion--nojs summary{
+  padding: 1.1rem;
+}

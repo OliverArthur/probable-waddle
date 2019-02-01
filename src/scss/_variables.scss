@@ -1,0 +1,45 @@
+// ********************************************************
+// General Variables
+// ********************************************************
+
+
+// Colors
+// ********************************************************
+
+//  Primary
+$body-base: #f5f5f5 !default;
+$font-color: #333333 !default;
+$header-color: #444F5A !default;
+$white-color: #FFFFFF !default;
+$bluesky: #1E88E5 !default;
+
+
+// Typography
+// ********************************************************
+
+// Definining rems as 10px = 16px * 0.625
+$font-size: $font-size-root !default;
+
+$font-family: "Roboto", sans-serif !default;
+$font-family-pre: Courier, monospace !default;
+$font-size-base: 1.6em !default; // 16px by default
+$font-size-base-rem: 1.6rem !default;
+$font-weight: 300 !default;
+$line-height-base: 1.4 !default;
+
+// heading
+$heading-level-one: 3.6rem !default;
+$heading-level-two: 3rem !default;
+$heading-level-three: 2.6rem !default;
+$heading-level-fourth: 2rem !default;
+
+// Grid
+// ********************************************************
+$grid-gap: 1.5rem !default;
+
+// General
+// ********************************************************
+$border-radius: 0.4rem !default;
+$transition-timing: 0.3s !default;
+$box-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.12), 0 0.1rem 0.2rem rgba(0,0,0,0.24) !default;
+

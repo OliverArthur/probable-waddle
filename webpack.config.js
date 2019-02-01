@@ -12,8 +12,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'app.[name].js',
     publicPath: devMode === 'prodoction'
-      ? 'https://naughty-poitras-68bdf9.netlify.com/'
-      : 'http://localhost:3000'
+      ? 'http://localhost:3000'
+      : 'https://naughty-poitras-68bdf9.netlify.com'
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),

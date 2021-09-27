@@ -212,7 +212,7 @@ export default class Accordion {
       this.addClickListener()
       return payload
     } catch (e) {
-      throw new Error(e)
+      console.log(e)
     }
   }
 

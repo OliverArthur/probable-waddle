@@ -5,10 +5,13 @@ import Modal from 'Components/modal/modal'
 
 // Components
 // ********************************************************
-new Accordion({
+const app = new Accordion({
   element: 'accordion--js',
   accordion: '.accordion--js',
   modifier: '.accordion--responsive'
 })
 
-new Modal()
+const modal = new Modal()
+
+export { app, modal }
+

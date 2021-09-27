@@ -7,13 +7,12 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const devMode = process.env.NODE_ENV !== 'production'
 
 module.exports = {
+  mode: 'development',
   entry: ['babel-polyfill', path.join(__dirname, 'src/app.js')],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'app.[name].js',
-    publicPath: devMode === 'prodoction'
-      ? 'http://localhost:3000'
-      : 'https://naughty-poitras-68bdf9.netlify.com'
+    publicPath: '/'
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
@@ -55,7 +54,7 @@ module.exports = {
       new UglifyJsPlugin({
         cache: devMode !== 'production' ? true : false,
         parallel: devMode !== 'production' ? true : false,
-        sourceMap: devMode !== 'production' ? true : false
+        sourceMap: true
       }),
       new OptimizeCSSAssetsPlugin({})
     ]
@@ -66,9 +65,7 @@ module.exports = {
       title: 'Accordion',
       template: path.resolve(__dirname, 'src', 'index.html'),
       filename: 'index.html',
-      assest: devMode === 'prodoction'
-        ? 'http://localhost:3000'
-        : 'https://naughty-poitras-68bdf9.netlify.com'
+      assest: 'http://localhost:3000'
     }),
     new MiniCssExtractPlugin({
       filename: devMode ? '[name].css' : '[name].[hash].css',

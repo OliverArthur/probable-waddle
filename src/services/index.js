@@ -1,3 +1,4 @@
+import axios  from 'axios'
 import config from 'Config'
 
 export default class Services {
@@ -13,11 +14,10 @@ export default class Services {
    */
   static async get (page, perPage) {
     try {
-      const response = await fetch(`${config.base_uri}/beers?page=${page}&per_page=${perPage}`)
-      const body = await response.json()
-      return body
+      const response = await axios.get(`${config.base_uri}beers?page=${page}&per_page=${perPage}`)
+      return response.data
     } catch (e) {
-      throw new Error(e)
+      console.log(e)
     }
   }
 
@@ -31,11 +31,10 @@ export default class Services {
    */
   static async getById (id) {
     try {
-      const response = await fetch(`${config.base_uri}/beers/${id}`)
-      const body = await response.json()
-      return body
+      const response = await axios.get(`${config.base_uri}beers/${id}`)
+      return response.data
     } catch (e) {
-      throw new Error(e)
+      console.log(e)
     }
   }
 }
